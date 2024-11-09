@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ali & Meghan's Wedding - Upload and View Photos & Videos">
+    <title>Wedding Memories</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #5C6BC0;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            color: #333;
+            margin-bottom: 40px;
+        }
+
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        /* Photo Styles */
+        .wedding-photo {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;  /* Aligns buttons horizontally */
+            gap: 20px;  /* Adds spacing between buttons */
+            margin-top: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #5C6BC0;
+            color: white;
+            font-size: 1.2em;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #3f4ea1;
+            transform: scale(1.05);
+        }
+
+        .button:active {
+            transform: scale(0.98);
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 20px;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .footer a {
+            color: #5C6BC0;
+            text-decoration: none;
+        }
+
+        /* Animation for smooth page load */
+        .container {
+            opacity: 0;
+            transform: translateY(50px);
+            animation: fadeInUp 1s forwards;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px;
+            }
+
+            h1 {
+                font-size: 2.5em;
+            }
+
+            h2 {
+                font-size: 1.3em;
+            }
+
+            .button {
+                font-size: 1em;
+                padding: 12px 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Ali & Meghan's Wedding</h1>
+    <h2>Help us relive the magic of the day!</h2>
+
+    <!-- Add a beautiful wedding photo -->
+    <img src="https://cdn.pixabay.com/photo/2014/11/13/17/04/heart-529607_1280.jpg" alt="Wedding Photo" class="wedding-photo">
+    
+    <!-- Buttons for Uploading and Viewing -->
+    <div class="buttons">
+        <a href="https://weduploader.com/upload/HfkYCxYHAAphE8Vt" class="button">Upload Your Photos & Videos</a>
+        <a href="https://drive.google.com/drive/folders/1ZeQDIQ-vJ3g5nQzYwsq0GOL5Pjfxa9Cb" class="button">View Wedding Gallery</a>
+    </div>
+
+
+</div>
+
+</body>
+</html>
